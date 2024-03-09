@@ -15,7 +15,7 @@ func main() {
 	var r *chi.Mux = chi.NewRouter()
 	handlers.Handlers(r)
 
-	fmt.Println("Staring GO API service...")
+	fmt.Println("Staring GO API service....")
 
 	err := http.ListenAndServe("localhost:8000", r)
 
